@@ -1,0 +1,15 @@
+/* Add application styles & imports to this file! */
+
+// @import 'ag-grid-community/dist/styles/ag-grid.css';
+// @import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+// @import '~@ag-grid-community/core/dist/styles/ag-grid.css';
+// @import '~@ag-grid-community/core/dist/styles/ag-theme-balham.css';
+// @import '~@ag-grid-community/core/dist/styles/ag-theme-alpine.css';
+
+@use '~@ag-grid-community/styles' as ag;
+
+@include ag.grid-styles(
+  (
+    theme: ag-theme-balham,
+  )
+);
