@@ -1,6 +1,6 @@
 {
   "name": "angular",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "ng": "ng",
@@ -11,14 +11,14 @@
     "e2e": "ng e2e"
   },
   "dependencies": {
-    "@ag-grid-community/angular": "~30.1.0",
-    "@ag-grid-community/client-side-row-model": "~30.1.0",
-    "@ag-grid-community/core": "~30.1.0",
-    "@ag-grid-community/csv-export": "^30.1.0",
-    "@ag-grid-community/styles": "~30.1.0",
-    "@ag-grid-enterprise/clipboard": "~30.1.0",
-    "@ag-grid-enterprise/core": "~30.1.0",
-    "@ag-grid-enterprise/menu": "~30.1.0",
+    "@ag-grid-community/angular": "~30.2.0",
+    "@ag-grid-community/client-side-row-model": "~30.2.0",
+    "@ag-grid-community/core": "~30.2.0",
+    "@ag-grid-community/csv-export": "^30.2.0",
+    "@ag-grid-community/styles": "~30.2.0",
+    "@ag-grid-enterprise/clipboard": "~30.2.0",
+    "@ag-grid-enterprise/core": "~30.2.0",
+    "@ag-grid-enterprise/menu": "~30.2.0",
     "@angular/animations": "^16.2.7",
     "@angular/cdk": "^16.2.6",
     "@angular/common": "^16.2.7",
@@ -28,10 +28,16 @@
     "@angular/platform-browser": "^16.2.7",
     "@angular/platform-browser-dynamic": "^16.2.7",
     "@angular/router": "^16.2.7",
+    "@fortawesome/angular-fontawesome": "^0.13.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "core-js": "^3.32.2",
+    "lodash-es": "^4.17.21",
     "rxjs": "^7.8.1",
     "tslib": "^2.6.2",
-    "zone.js": "^0.14.0"
+    "zone.js": "^0.13.0"
   },
   "devDependencies": {
     "@angular-devkit/architect": "^0.1602.4",
@@ -41,6 +47,7 @@
     "@angular/cli": "^16.2.4",
     "@angular/compiler-cli": "^16.2.7",
     "@types/jasmine": "~4.0.0",
+    "@types/lodash-es": "^4.17.9",
     "jasmine": "^5.1.0",
     "jasmine-ajax": "^4.0.0",
     "jasmine-core": "~5.1.1",

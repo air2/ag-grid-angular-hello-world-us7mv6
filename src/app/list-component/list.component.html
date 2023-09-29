@@ -1,0 +1,15 @@
+Data:
+<ag-grid-angular
+  #agGrid
+  style="width: 500px; height: 150px;"
+  class="ag-theme-balham"
+  [rowData]="data | async"
+  [columnDefs]="columnDefs"
+  [getRowId]="getRowId" 
+  [suppressAggFuncInHeader]="true" 
+  groupDisplayType="custom"
+  rowSelection="single"
+  [columnTypes]="columnTypes"
+  [components]="frameworkComponents"
+>
+</ag-grid-angular>

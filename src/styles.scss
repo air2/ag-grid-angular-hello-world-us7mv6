@@ -6,7 +6,7 @@
 // @import '~@ag-grid-community/core/dist/styles/ag-theme-balham.css';
 // @import '~@ag-grid-community/core/dist/styles/ag-theme-alpine.css';
 
-@use '~@ag-grid-community/styles' as ag;
+@use '../node_modules/@ag-grid-community/styles' as ag;
 
 @include ag.grid-styles(
   (

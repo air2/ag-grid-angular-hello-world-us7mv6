@@ -1,0 +1,10 @@
+<div>
+  <ng-template [ngIf]="!!rowData && showIcon(rowData, formattedValue)">
+    <span *ngIf="chooseIcons">
+      <fa-icon *ngFor="let iconItem of chooseIcons(rowData, formattedValue)" class="px-2"
+        [ngClass]="[ isDisabled(rowData) ? 'iconDisabled' : iconItem.iconClass ]" [icon]="iconItem.iconDef"
+        [spin]="!!iconItem.spin"></fa-icon>
+    </span>
+  </ng-template>
+  {{rowData && showValueFunc(rowData, formattedValue) ? formattedValue : ''}}
+</div>

@@ -1,0 +1,15 @@
+<div [style.paddingLeft.px]="paddingLeft">
+  <div *ngIf="isGroup" [style.cursor]="'pointer'" [style.display]="'inline-block'" (click)="onClick()">
+    <fa-icon [icon]="rowIcon" [rotate]="rotation" class="fa-sharp"></fa-icon>
+  </div>
+  <ng-template [ngIf]="showIcon(rowData, formattedValue)">
+    <span *ngIf="chooseIcons">
+      <fa-icon *ngFor="let iconItem of chooseIcons(rowData, formattedValue)" class="px-2"
+        [ngClass]="[ (rowData && isDisabled(rowData)) ? 'iconDisabled' : iconItem.iconClass ]" [icon]="iconItem.iconDef"
+        [spin]="!!iconItem.spin"></fa-icon>
+    </span>
+  </ng-template>
+
+  &nbsp;
+  {{ params ? params.valueFormatter(params.node, params.data) : '' }}
+</div>
